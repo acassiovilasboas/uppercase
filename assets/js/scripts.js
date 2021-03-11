@@ -113,7 +113,7 @@ let btn = document.querySelector(".btns")
                 text.select()
                 text.setSelectionRange(0, 99999)
                 document.execCommand("copy")
-                alert("Texto copiado com sucesso")
+                alert("Text successfully copied!")
                 return text.value
             }
         }
