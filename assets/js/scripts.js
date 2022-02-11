@@ -109,6 +109,9 @@ let btn = document.querySelector(".btns")
                     return letter === letter.toUpperCase()
                 return false
             },
+            snakeCase(text) {
+                return text.trim().split(" ").join("_").toLowerCase()
+            },
             copy(text) {
                 text.select()
                 text.setSelectionRange(0, 99999)
